@@ -44,7 +44,7 @@ GrievBot/
    pip install -r requirements.txt
 3. 𝐑𝐮𝐧 𝐭𝐡𝐞 𝐅𝐥𝐚𝐬𝐤 𝐚𝐩𝐩:
    python app.py
-4. 𝐎𝐩𝐞𝐧 𝐢𝐧 𝐲𝐨𝐮𝐫 𝐛𝐫𝐨𝐰𝐬𝐞𝐫 🌐: [Open GrievBot in your browser](http://127.0.0.1:5000/)
+4. 𝐎𝐩𝐞𝐧 𝐢𝐧 𝐲𝐨𝐮𝐫 𝐛𝐫𝐨𝐰𝐬𝐞𝐫 🌐: [http://127.0.0.1:5000/](http://127.0.0.1:5000/
 5. 𝐒𝐭𝐚𝐫𝐭 𝐚𝐬𝐤𝐢𝐧𝐠 𝐪𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬 💬 – the bot will respond instantly with Wikipedia summaries 📚
 
 𝐓𝐫𝐲 𝐓𝐡𝐞𝐬𝐞 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬 💬
