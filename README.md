@@ -38,7 +38,7 @@ GrievBot/
 𝐈𝐧𝐬𝐭𝐚𝐥𝐥𝐚𝐭𝐢𝐨𝐧 & 𝐒𝐞𝐭𝐮𝐩 🚀
 
 1. 𝐂𝐥𝐨𝐧𝐞 𝐭𝐡𝐞 𝐫𝐞𝐩𝐨𝐬𝐢𝐭𝐨𝐫𝐲:
-   git clone https://github.com/vundavillisowmya2124/Grievbot.git
+   git clone https://github.com/<your-username>/Grievbot.git
    cd Grievbot
 2. 𝐈𝐧𝐬𝐭𝐚𝐥𝐥 𝐝𝐞𝐩𝐞𝐧𝐝𝐞𝐧𝐜𝐢𝐞𝐬:
    pip install -r requirements.txt
