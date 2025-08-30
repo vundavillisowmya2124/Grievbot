@@ -25,15 +25,17 @@ The main goal is to provide a simple, interactive chatbot interface that can run
   
 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 𝐒𝐭𝐫𝐮𝐜𝐭𝐮𝐫𝐞 📂
 
-GrievBot/
+Grievbot/
+│── project/
+│   ├── app.py              # Flask backend
+│   ├── templates/
+│   │   └── index.html      # Chat UI
+│   └── static/
+│       ├── style.css       # Styles
+│       └── script.js       # Frontend logic
 │
-├── app.py                 # Main Flask application
-├── requirements.txt       # Python dependencies
-├── templates/
-│   └── index.html         # Frontend HTML file
-└── static/
-    ├── style.css          # Chat interface styling
-    └── script.js          # Frontend JS for sending/receiving messages
+│── requirements.txt        # List of Python packages
+│── README.md               # This file
 
 𝐈𝐧𝐬𝐭𝐚𝐥𝐥𝐚𝐭𝐢𝐨𝐧 & 𝐒𝐞𝐭𝐮𝐩 🚀
 
@@ -44,7 +46,7 @@ GrievBot/
    pip install -r requirements.txt
 3. 𝐑𝐮𝐧 𝐭𝐡𝐞 𝐅𝐥𝐚𝐬𝐤 𝐚𝐩𝐩:
    python app.py
-4. 𝐎𝐩𝐞𝐧 𝐢𝐧 𝐲𝐨𝐮𝐫 𝐛𝐫𝐨𝐰𝐬𝐞𝐫 🌐: [http://127.0.0.1:5000/](http://127.0.0.1:5000/
+4. 𝐎𝐩𝐞𝐧 𝐢𝐧 𝐲𝐨𝐮𝐫 𝐛𝐫𝐨𝐰𝐬𝐞𝐫 🌐: http://127.0.0.1:5000/
 5. 𝐒𝐭𝐚𝐫𝐭 𝐚𝐬𝐤𝐢𝐧𝐠 𝐪𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬 💬 – the bot will respond instantly with Wikipedia summaries 📚
 
 𝐓𝐫𝐲 𝐓𝐡𝐞𝐬𝐞 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬 💬
