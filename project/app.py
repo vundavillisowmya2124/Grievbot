@@ -1,13 +1,7 @@
 from flask import Flask, render_template, request, jsonify
+import wikipedia   # pip install wikipedia
 
 app = Flask(__name__)
-
-faq = {
-    "how to reset password": "Click 'Forgot Password' on the login page.",
-    "how to contact support": "Email us at support@example.com.",
-    "lab results delay": "Results take 48 hours to update.",
-    "fee payment issue": "Check your payment ID and retry."
-}
 
 @app.route("/")
 def home():
@@ -15,8 +9,22 @@ def home():
 
 @app.route("/get", methods=["POST"])
 def chatbot_response():
-    user_input = request.json.get("msg").lower()
-    response = faq.get(user_input, "Sorry, I don't understand that. Please contact support.")
+    user_input = request.json.get("msg", "").strip()
+    
+    if not user_input:
+        return jsonify({"response": "Please type a question."})
+    
+    try:
+        # Get a short Wikipedia summary (2 sentences)
+        summary = wikipedia.summary(user_input, sentences=2)
+        response = summary
+    except wikipedia.exceptions.DisambiguationError as e:
+        response = f"Your query is too broad. Did you mean: {', '.join(e.options[:5])}?"
+    except wikipedia.exceptions.PageError:
+        response = "Sorry, I couldn't find an answer for that."
+    except Exception as e:
+        response = "Sorry, I ran into a problem while searching. Please try again."
+    
     return jsonify({"response": response})
 
 if __name__ == "__main__":
